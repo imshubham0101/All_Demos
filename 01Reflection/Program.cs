@@ -35,15 +35,19 @@ namespace _01Reflection
                     {
                         Table table = (Table) attr;
                         Console.WriteLine("Create table "+ table.Tablename + "( )");
-                        object dynamicObjectOfSomeType = null;
+                       // object dynamicObjectOfSomeType = null;
                         PropertyInfo[] properties = type.GetProperties();
                         foreach (PropertyInfo  property in properties)
                         {
                             Console.WriteLine("Properties");
                             Console.WriteLine(property.Name);
-                            dynamicObjectOfSomeType =
-                    assembly.CreateInstance(type.FullName);
-                            Console.WriteLine(property.GetValue(dynamicObjectOfSomeType));
+                    //        dynamicObjectOfSomeType =
+                    //assembly.CreateInstance(type.FullName);
+                    //        Console.WriteLine(property.GetValue(dynamicObjectOfSomeType));
+
+
+
+                            
                         }
                         
                     }
