@@ -326,7 +326,7 @@ namespace Collection
        
         protected Hashtable data = MyCollection.getHashTable();
         public abstract void  writeFile();
-        public abstract void    readFile();
+        public abstract void   readFile();
 
 
     }
