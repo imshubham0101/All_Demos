@@ -11,7 +11,7 @@ namespace Emp_Lib
     public class Emp
     {
         [Column (Colname = "Emp_No",colType = "int")]
-        private int _No = 10;
+        private int _No;
 
         public int No 
         {
@@ -20,7 +20,7 @@ namespace Emp_Lib
         }
 
         [Column (Colname = "Emp_Name",colType ="varchar(50)")]
-        private string _Name = "DOTNET";
+        private string _Name ;
 
         public string Name
         {
